@@ -3,5 +3,5 @@ window.addEventListener("load", function () {
 });
 async function mediaOnline() {
   let video = navigator.mediaDevices.getUserMedia({ audio: true, video: true });
-  document.querySelector("#video").srcObject = video;
+  document.querySelector("#video").srcObject = video.play;
 }
